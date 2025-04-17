@@ -1,0 +1,16 @@
+[project]
+name = "mcp-kagi-search"
+version = "0.1.0"
+description = "MCP Server for Kagi Search"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.3",
+    "mcp[cli]>=1.2.0"
+]
+
+[project.scripts]
+mcp-kagi-search = "mcp_kagi_search:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
